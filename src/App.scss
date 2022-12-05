@@ -1,7 +1,203 @@
 .App {
 	text-align: center;
+};
 
-	button {
-		font-weight: bold;
-	}
+.bus {
+	position: absolute;
+	top: 150px;
+	left: 140px;
+	background-color: brown;
+	height: 385px;
+	width: 1200px;
+	border-radius: 20px;
+	clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
+	border: 4px solid black;
+};
+
+.firstWindow {
+	position: absolute;
+	top: 195px;
+	left: 750px;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid burlywood;
+};
+
+.secondWindow {
+	position: absolute;
+	top: 195px;
+	left: 890px;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid burlywood;
+};
+
+.thirdWindow {
+	position: absolute;
+	top: 195px;
+	left: 1030px;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid burlywood;
+};
+
+.fourthWindow {
+  position: absolute;
+	top: 195px;
+	left: 1174px;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid burlywood;
+};
+
+.frontTyre {
+	position: absolute;
+	top: 490px;
+	left: 230px;
+	background-color: black;
+	height: 120px;
+	width: 120px;
+	border-radius: 75px;
+	border: 2px solid burlywood;
+};
+
+.frontInnerTyre {
+	position: absolute;
+	top: 513px;
+	left: 252px;
+	background-color: gray;
+	height: 80px;
+	width: 80px;
+	border-radius: 75px;
+};
+
+.backInnerTyre {
+	position: absolute;
+	top: 511px;
+	left: 1188px;
+	background-color: gray;
+	height: 80px;
+	width: 80px;
+	border-radius: 75px;
+};
+
+.backTyre {
+	position: absolute;
+	top: 488px;
+	left: 1165px;
+	background-color: black;
+	height: 120px;
+	width: 120px;
+	border-radius: 75px;
+	border: 2px solid burlywood;
+};
+
+.door {
+	position: absolute;
+	top: 201px;
+	left: 465px;
+	background-color: black;
+	height: 331px;
+	width: 200px;
+	border: 2px solid black;
+};
+
+.rightDoor {
+  position: absolute;
+	top: 204px;
+	left: 469px;
+	background-color: cadetblue;
+	height: 325px;
+	width: 90px;
+	border: 2px solid burlywood;
+};
+
+.leftDoor {
+	position: absolute;
+	top: 204px;
+	left: 570px;
+	background-color: cadetblue;
+	height: 325px;
+	width: 90px;
+	border: 2px solid burlywood;
+};
+
+.road {
+	position: absolute;
+	top: 541px;
+	background-color: rgba(0, 5, 10, 0.726);
+	height: 450px;
+	width: 2000px;
+};
+
+.crossLine {
+	position: absolute;
+	top: 673px;
+	left: 10px;
+	border-top: white dashed 20px;
+	height: 1150px;
+	width: 1600px;
+};
+
+.ledRed {
+	position: absolute;
+	top: 425.5px;
+	left: 1348px;
+	border: 1px solid black;
+	background-color: red;
+	box-shadow: red 0 2px 12px;
+	height: 35px;
+	width: 10px;
+};
+
+.ledOrange {
+	position: absolute;
+	top: 460px;
+	left: 1348px;
+	border: 1px solid black;
+	background-color: rgb(236, 101, 22);
+	box-shadow: rgb(236, 101, 22) 0 2px 12px;
+	height: 35px;
+	width: 10px;
+};
+
+.sticker {
+	position: absolute;
+	top: 385px;
+	left: 172px;
+	background-color: sandybrown;
+	border: 3px solid rgba(0, 5, 10, 0.726);
+	height: 51px;
+	width: 1168px;
+};
+
+.frontGlass {
+	position: absolute;
+	left: 180px;
+	top: 146px;
+	border-radius: 60px;
+	width: 55px;
+	height: 198px;
+	background-color: black;
+	clip-path: polygon(75% 0, 100% 0, 100% 100%, 0% 100%);
+	border: 2px solid burlywood;
+};
+
+.roofTop {
+	position: absolute;
+	top: 135px;
+	left: 260px;
+	background-color: black;
+	border-radius: 35px;
+	height: 15px;
+	width: 1050px;
 }
+
