@@ -2,11 +2,11 @@
 	text-align: center;
 };
 
-.bus {
+.busBody {
 	position: absolute;
 	top: 150px;
 	left: 140px;
-	background-color: brown;
+	background-color: rgb(161, 7, 7);
 	height: 385px;
 	width: 1200px;
 	border-radius: 20px;
@@ -14,48 +14,16 @@
 	border: 4px solid black;
 };
 
-.firstWindow {
+.window {
 	position: absolute;
-	top: 195px;
-	left: 750px;
+	top: 200px;
+	left: 748px;
 	background-color: black;
 	height: 100px;
 	width: 100px;
 	border-radius: 10px;
-	border: 2px solid burlywood;
-};
-
-.secondWindow {
-	position: absolute;
-	top: 195px;
-	left: 890px;
-	background-color: black;
-	height: 100px;
-	width: 100px;
-	border-radius: 10px;
-	border: 2px solid burlywood;
-};
-
-.thirdWindow {
-	position: absolute;
-	top: 195px;
-	left: 1030px;
-	background-color: black;
-	height: 100px;
-	width: 100px;
-	border-radius: 10px;
-	border: 2px solid burlywood;
-};
-
-.fourthWindow {
-  position: absolute;
-	top: 195px;
-	left: 1174px;
-	background-color: black;
-	height: 100px;
-	width: 100px;
-	border-radius: 10px;
-	border: 2px solid burlywood;
+	border: 3px solid burlywood;
+	margin-left: 500px;
 };
 
 .frontTyre {
@@ -66,27 +34,50 @@
 	height: 120px;
 	width: 120px;
 	border-radius: 75px;
-	border: 2px solid burlywood;
+	border: 3px solid burlywood;
+};
+
+.frontTyreRim {
+	position: absolute;
+	border: gray dashed 8px;
+	top: 502px;
+	left: 245px;
+	height: 84px;
+	width: 81px;
+	border-radius: 50%;
 };
 
 .frontInnerTyre {
 	position: absolute;
-	top: 513px;
+	top: 510px;
 	left: 252px;
-	background-color: gray;
-	height: 80px;
-	width: 80px;
-	border-radius: 75px;
-};
+	background-color: black;
+	height: 79px;
+	width: 79px;
+	border-radius: 50%;
+	border: 2px solid burlywood;
+}
 
 .backInnerTyre {
 	position: absolute;
-	top: 511px;
-	left: 1188px;
-	background-color: gray;
-	height: 80px;
-	width: 80px;
-	border-radius: 75px;
+	top: 509px;
+	left: 1187px;
+	background-color: black;
+	height: 79px;
+	width: 79px;
+	border-radius: 50%;
+	border: 2px solid burlywood;
+}
+
+
+.backTyreRim {
+	position: absolute;
+	border: gray dashed 8px;
+	top: 501px;
+	left: 1180px;
+	height: 84px;
+	width: 81px;
+	border-radius: 50%;
 };
 
 .backTyre {
@@ -97,13 +88,14 @@
 	height: 120px;
 	width: 120px;
 	border-radius: 75px;
-	border: 2px solid burlywood;
+	border: 3px solid burlywood;
 };
 
 .door {
 	position: absolute;
 	top: 201px;
 	left: 465px;
+	border-radius: 25px;
 	background-color: black;
 	height: 331px;
 	width: 200px;
@@ -114,33 +106,35 @@
   position: absolute;
 	top: 204px;
 	left: 469px;
+	border-radius: 18px;
 	background-color: cadetblue;
 	height: 325px;
-	width: 90px;
+	width: 92px;
 	border: 2px solid burlywood;
 };
 
 .leftDoor {
 	position: absolute;
 	top: 204px;
-	left: 570px;
+	left: 569px;
+	border-radius: 18px;
 	background-color: cadetblue;
 	height: 325px;
-	width: 90px;
+	width: 92px;
 	border: 2px solid burlywood;
 };
 
 .road {
 	position: absolute;
 	top: 541px;
-	background-color: rgba(0, 5, 10, 0.726);
+	background-color: black;
 	height: 450px;
 	width: 2000px;
 };
 
 .crossLine {
 	position: absolute;
-	top: 673px;
+	top: 655px;
 	left: 10px;
 	border-top: white dashed 20px;
 	height: 1150px;
@@ -174,21 +168,21 @@
 	top: 385px;
 	left: 172px;
 	background-color: sandybrown;
-	border: 3px solid rgba(0, 5, 10, 0.726);
+	border: 3px solid black;
 	height: 51px;
 	width: 1168px;
 };
 
 .frontGlass {
 	position: absolute;
-	left: 180px;
-	top: 146px;
+	left: 177px;
+	top: 148px;
 	border-radius: 60px;
-	width: 55px;
+	width: 51px;
 	height: 198px;
 	background-color: black;
 	clip-path: polygon(75% 0, 100% 0, 100% 100%, 0% 100%);
-	border: 2px solid burlywood;
+	border: 3px solid burlywood;
 };
 
 .roofTop {
@@ -201,3 +195,10 @@
 	width: 1050px;
 }
 
+.backgroundColor {
+	position: absolute;
+	background-color: rgb(183, 205, 214);
+	top: 1px;
+	width: 100%;
+	height: 100%;
+};

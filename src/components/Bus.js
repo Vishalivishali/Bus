@@ -1,27 +1,18 @@
 /* eslint-disable max-lines-per-function */
 import { React } from 'react';
+import BusBody from './BusBody';
+import Door from './Door';
+import Road from './Road';
+import Tyre from './Tyre';
+import Windows from './Windows';
 
 const Bus = () =>
-	<div>
-		<div className="roofTop"/>
-		<div className="bus"/>
-		<div className="frontGlass"/>
-		<div className="firstWindow"/>
-		<div className="secondWindow"/>
-		<div className="thirdWindow"/>
-		<div className="fourthWindow"/>
-		<div className="sticker"/>
-		<div className="road"/>
-		<div className="crossLine"/>
-		<div className="frontTyre"/>
-		<div className="frontInnerTyre"/>
-		<div className="backTyre"/>
-		<div className="backInnerTyre"/>
-		<div className="door"/>
-		<div className="rightDoor"/>
-		<div className="leftDoor"/>
-		<div className="ledRed"/>
-		<div className="ledOrange"/>
+	<div className="backgroundColor">
+		<BusBody/>
+		<Door/>
+		<Road/>
+		<Tyre/>
+		<Windows/>
 	</div>;
 
 export default Bus;
