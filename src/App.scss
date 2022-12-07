@@ -23,10 +23,9 @@
 	width: 100px;
 	border-radius: 10px;
 	border: 3px solid burlywood;
-	margin-left: 500px;
 };
 
-.frontTyre {
+.outerTyre {
 	position: absolute;
 	top: 490px;
 	left: 230px;
@@ -37,61 +36,14 @@
 	border: 3px solid burlywood;
 };
 
-.frontTyreRim {
-	position: absolute;
-	border: gray dashed 8px;
-	top: 502px;
-	left: 245px;
-	height: 84px;
-	width: 81px;
+.rim {
+
+	border: black dashed 7px;
+	background-color: rgb(109, 101, 101);
 	border-radius: 50%;
 };
 
-.frontInnerTyre {
-	position: absolute;
-	top: 510px;
-	left: 252px;
-	background-color: black;
-	height: 79px;
-	width: 79px;
-	border-radius: 50%;
-	border: 2px solid burlywood;
-}
-
-.backInnerTyre {
-	position: absolute;
-	top: 509px;
-	left: 1187px;
-	background-color: black;
-	height: 79px;
-	width: 79px;
-	border-radius: 50%;
-	border: 2px solid burlywood;
-}
-
-
-.backTyreRim {
-	position: absolute;
-	border: gray dashed 8px;
-	top: 501px;
-	left: 1180px;
-	height: 84px;
-	width: 81px;
-	border-radius: 50%;
-};
-
-.backTyre {
-	position: absolute;
-	top: 488px;
-	left: 1165px;
-	background-color: black;
-	height: 120px;
-	width: 120px;
-	border-radius: 75px;
-	border: 3px solid burlywood;
-};
-
-.door {
+.mainDoor {
 	position: absolute;
 	top: 201px;
 	left: 465px;
@@ -102,21 +54,10 @@
 	border: 2px solid black;
 };
 
-.rightDoor {
+.doorParts {
   position: absolute;
 	top: 204px;
 	left: 469px;
-	border-radius: 18px;
-	background-color: cadetblue;
-	height: 325px;
-	width: 92px;
-	border: 2px solid burlywood;
-};
-
-.leftDoor {
-	position: absolute;
-	top: 204px;
-	left: 569px;
 	border-radius: 18px;
 	background-color: cadetblue;
 	height: 325px;
