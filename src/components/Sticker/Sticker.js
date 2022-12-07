@@ -3,7 +3,7 @@ import { React } from 'react';
 import StickerStyle from './StickerStyle';
 
 const stickerCount = 1;
-const add = 172;
+const stickerMargin = 172;
 const height = 51;
 const width = 1168;
 
@@ -12,7 +12,7 @@ const busDesigns = range(0, stickerCount).map((busSticker) => ({
 	height: height,
 	width: width,
 	x: 385,
-	y: busSticker + add,
+	y: busSticker + stickerMargin,
 }));
 
 const Sticker = () =>

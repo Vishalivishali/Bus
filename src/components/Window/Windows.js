@@ -3,15 +3,15 @@ import { React } from 'react';
 import Window from './Window';
 
 const windowCount = 4;
-const multiplier = 166;
-const add = 700;
+const windowMultiplier = 166;
+const windowMargin = 700;
 const size = 100;
 
 const windows = range(0, windowCount).map((window) => ({
 
 	size: size,
 	x: 200,
-	y: (window * multiplier) + add,
+	y: (window * windowMultiplier) + windowMargin,
 }));
 
 const Windows = () =>

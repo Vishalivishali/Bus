@@ -3,7 +3,7 @@ import { React } from 'react';
 import FrontGlassStyle from './FrontGlassStyle';
 
 const glassCount = 1;
-const add = 177;
+const glassMargin = 177;
 const height = 198;
 const width = 51;
 
@@ -12,7 +12,7 @@ const busGlasses = range(0, glassCount).map((glass) => ({
 	height: height,
 	width: width,
 	x: 148,
-	y: glass + add,
+	y: glass + glassMargin,
 }));
 
 const FrontGlass = () =>

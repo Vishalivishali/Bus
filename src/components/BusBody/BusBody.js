@@ -3,7 +3,7 @@ import { React } from 'react';
 import BusBodyStyle from './BusBodyStyle';
 
 const busBodyCount = 1;
-const add = 140;
+const busBodyMargin = 140;
 const height = 385;
 const width = 1200;
 
@@ -12,7 +12,7 @@ const busBodies = range(0, busBodyCount).map((bus) => ({
 	height: height,
 	width: width,
 	x: 150,
-	y: bus + add,
+	y: bus + busBodyMargin,
 }));
 
 const BusBody = () =>

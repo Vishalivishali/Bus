@@ -3,7 +3,7 @@ import { React } from 'react';
 import DoorStyles from './DoorStyles';
 
 const doorCount = 1;
-const add = 469;
+const mainDoorMargin = 469;
 const height = 331;
 const width = 200;
 
@@ -12,7 +12,7 @@ const mainDoors = range(0, doorCount).map((door) => ({
 	height: height,
 	width: width,
 	x: 201,
-	y: door + add,
+	y: door + mainDoorMargin,
 }));
 
 const MainDoor = () =>
