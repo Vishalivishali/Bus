@@ -1,6 +1,9 @@
 import { React } from 'react';
 
-const DoorStyles = ({ width, height, x, y, style }) =>
+const DoorStyles = ({ config }) => {
+	const { dimensions:
+{ mainDoor: { width, height, x, y, style }}} = config;
+
 	<div
 		style={ {
 			width: `${ width }px`,
@@ -12,5 +15,6 @@ const DoorStyles = ({ width, height, x, y, style }) =>
 		} }
 		className={ style }
 	/>;
+};
 
 export default DoorStyles ;

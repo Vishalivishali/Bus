@@ -12,4 +12,4 @@ const FrontGlassStyle = ({ width, height, x, y, style }) =>
 		className={ style }
 	/>;
 
-export default FrontGlassStyle ;
+export default FrontGlassStyle;

@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const LedStyles = ({ width, height, x, y, style }) =>
+const RoofStyle = ({ width, height, x, y, style }) =>
 	<div
 		style={ {
 			width: `${ width }px`,
@@ -8,8 +8,9 @@ const LedStyles = ({ width, height, x, y, style }) =>
 			top: `${ x }px`,
 			left: `${ y }px`,
 			position: 'absolute',
+			borderRadius: '35px',
 		} }
 		className={ style }
 	/>;
 
-export default LedStyles ;
+export default RoofStyle;

@@ -1,24 +1,30 @@
 import { React } from 'react';
-import Roof from './Roof/Roof';
-import BusBody from './BusBody/BusBody';
-import FrontGlass from './FrontGlass/FrontGlass';
-import Sticker from './Sticker/Sticker';
+import ExtraItems from './otherParts/ExtraItems';
 import Doors from './Door/Doors';
 import Windows from './Window/Windows';
-import Led from './Led/Led';
-import Road from './Road';
 import Tyres from './Tyre/Tyres';
 
-const Bus = () =>
-	<div className="backgroundColor">
-		<Roof/>
-		<BusBody/>
-		<FrontGlass/>
-		<Sticker/>
+const busStyle = ({ config }) => {
+	const { dimensions: { busBody:
+			{ top, left, width, height }}} = config;
+
+	return {
+
+		top: `${ top }px`,
+		left: `${ left }px`,
+		width: `${ width }px`,
+		height: `${ height }px`,
+	};
+};
+
+const Bus = (context) =>
+	<div
+		className="busBody"
+		style={ busStyle(context) }
+	>
+		<ExtraItems/>
 		<Doors/>
 		<Windows/>
-		<Led/>
-		<Road/>
 		<Tyres/>
 	</div>;
 

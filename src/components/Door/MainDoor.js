@@ -3,7 +3,7 @@ import { React } from 'react';
 import DoorStyles from './DoorStyles';
 
 const doorCount = 1;
-const mainDoorMargin = 469;
+const mainDoorMargin = 465;
 const height = 331;
 const width = 200;
 
