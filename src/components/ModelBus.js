@@ -6,7 +6,8 @@ import Tyres from './Tyre/Tyres';
 
 const busStyle = ({ config }) => {
 	const { dimensions: { busBody:
-			{ top, left, height, width, borderRadius, border }}} = config;
+			{ busColor, top, left, height, width,
+				borderRadius, border }}} = config;
 
 	return {
 
@@ -14,16 +15,17 @@ const busStyle = ({ config }) => {
 		left: `${ left }px`,
 		height: `${ height }px`,
 		width: `${ width }px`,
-		border: `${ border }px solid black`,
+		backgroundColor: busColor,
 		borderTopLeftRadius: `${ borderRadius.topLeft }%`,
 		borderTopRightRadius: `${ borderRadius.topRight }%`,
 		borderBottomLeftRadius: `${ borderRadius.bottomLeft }%`,
 		borderBottomRightRadius: `${ borderRadius.bottomRight }%`,
+		border: `${ border }px solid black`,
 
 	};
 };
 
-const Bus = (context) =>
+const ModelBus = (context) =>
 	<div
 		className="busBody"
 		style={ busStyle(context) }
@@ -34,4 +36,4 @@ const Bus = (context) =>
 		<Tyres { ...context }/>
 	</div>;
 
-export default Bus;
+export default ModelBus;

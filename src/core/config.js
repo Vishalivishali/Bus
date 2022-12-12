@@ -1,7 +1,7 @@
 import { range } from '@laufire/utils/collection';
 import { rndValue } from '@laufire/utils/random';
 
-const colors = ['brown', 'plum', 'lightBlue'];
+const colors = ['#a70705', '#d777d7', '#afd3db'];
 const doorCount = 2;
 const doorMultiplier = 101;
 const doorMargin = 294;
@@ -20,7 +20,8 @@ const windowMargin = 590;
 
 const config = { busColor: rndValue(colors),
 	dimensions: { busBody:
-		{ top: 100,
+		{ busColor: rndValue(colors),
+			top: 100,
 			left: 140,
 			height: 450,
 			width: 1370,
