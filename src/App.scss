@@ -3,23 +3,26 @@
 };
 
 .busBody {
+	position: absolute;
 	background-color: rgb(161, 7, 7);
-	clip-path: polygon(6.5% 0, 100% 0%, 100% 100%, 0 100%);
 	border: 4px solid black;
 };
 
 .window {
+	position: absolute;
 	background-color: black;
 	border: 3px solid burlywood;
 };
 
 .outerTyre {
+	position: absolute;
 	background-color: black;
 	border: 3px solid burlywood;
+	border-radius: 50%,
 };
 
 .rim {
-
+  position: absolute;
 	border: black dashed 7px;
 	background-color: rgb(109, 101, 101);
 	border-radius: 50%;
@@ -29,54 +32,46 @@
 	position: absolute;
 	background-color: black;
 	border: 2px solid black;
+	border-radius: 30px;
 };
 
 .doorParts {
+	position: absolute;
 	background-color: cadetblue;
 	border: 2px solid burlywood;
-};
-
-.road {
-	position: absolute;
-	top: 541px;
-	background-color: black;
-	height: 450px;
-	width: 2000px;
-};
-
-.crossLine {
-	position: absolute;
-	top: 655px;
-	left: 10px;
-	border-top: white dashed 20px;
-	height: 1150px;
-	width: 1600px;
+	border-radius: 18px;
 };
 
 .ledRed {
+	position: absolute;
 	border: 1px solid black;
 	background-color: red;
 	box-shadow: red 0 2px 12px;
 };
 
 .ledOrange {
+	position: absolute;
 	border: 1px solid black;
 	background-color: rgb(236, 101, 22);
 	box-shadow: rgb(236, 101, 22) 0 2px 12px;
 };
 
 .sticker {
+	position: absolute;
 	background-color: sandybrown;
 	border: 3px solid black;
 };
 
 .frontGlass {
+	position: absolute;
 	background-color: black;
 	border: 3px solid burlywood;
 };
 
-.roofTop {
+.roof {
+	position: absolute;
 	background-color: black;
+	border: 3px solid black;
 }
 
 .backgroundColor {

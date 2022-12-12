@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const TyreStyle = ({ size, x, y, style }) =>
+const TyreStyle = ({ size, x, y, style, border }) =>
 	<div
 		style={ {
 			width: `${ size }px`,
@@ -8,7 +8,7 @@ const TyreStyle = ({ size, x, y, style }) =>
 			top: `${ x }px`,
 			left: `${ y }px`,
 			position: 'absolute',
-			borderRadius: '70px',
+			border: border,
 		} }
 		className={ style }
 	/>;

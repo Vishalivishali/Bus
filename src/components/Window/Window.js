@@ -1,15 +1,17 @@
 import { React } from 'react';
 
-const Window = ({ size, x, y }) =>
+const Windows = ({ x, y, size, borderRadius, border }) =>
 	<div
+		className="window"
 		style={ {
-			width: `${ size }px`,
-			height: `${ size }px`,
 			top: `${ x }px`,
 			left: `${ y }px`,
+			width: `${ size }px`,
+			height: `${ size }px`,
 			position: 'absolute',
+			borderRadius: `${ borderRadius }px`,
+			border: `${ border }px solid burlywood`,
 		} }
-		className="window"
 	/>;
 
-export default Window;
+export default Windows;

@@ -2,14 +2,16 @@ import { React } from 'react';
 import Roof from './Roof';
 import FrontGlass from './FrontGlass';
 import Sticker from './Sticker';
-import Led from './Led';
+import RedLed from './RedLed';
+import OrangeLed from './OrangeLed';
 
-const ExtraItems = (config) =>
+const ExtraItems = (context) =>
 	<div>
-		<Roof { ...config }/>
-		<FrontGlass { ...config }/>
-		<Sticker { ...config }/>
-		<Led { ...config }/>
+		<Roof { ...context }/>
+		<FrontGlass { ...context }/>
+		<Sticker { ...context }/>
+		<RedLed { ...context }/>
+		<OrangeLed { ...context }/>
 	</div>;
 
 export default ExtraItems;

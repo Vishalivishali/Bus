@@ -1,26 +1,26 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import FrontGlassStyle from './FrontGlassStyle';
 
-const glassCount = 1;
-const glassMargin = 177;
-const height = 198;
-const width = 51;
+const FrontGlass = ({ config }) => {
+	const
+		{ dimensions: { frontGlass:
+			{ top, left, width, height, border, borderRadius }}} = config;
 
-const busGlasses = range(0, glassCount).map((glass) => ({
+	return (
+		<div
+			className="frontGlass"
 
-	height: height,
-	width: width,
-	x: 148,
-	y: glass + glassMargin,
-}));
-
-const FrontGlass = () =>
-	busGlasses.map((busGlass, key) =>
-		<FrontGlassStyle
-			key={ key }
-			{ ...{ ...busGlass, style: 'frontGlass' }
-			}
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				border: `${ border }px solid burlywood`,
+				borderTopLeftRadius: `${ borderRadius.topLeft }%`,
+				borderTopRightRadius: `${ borderRadius.topRight }%`,
+				borderBottomLeftRadius: `${ borderRadius.bottomLeft }%`,
+				borderBottomRightRadius: `${ borderRadius.bottomRight }%`,
+			} }
 		/>);
+};
 
 export default FrontGlass;

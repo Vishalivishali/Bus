@@ -1,22 +1,23 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import DoorStyles from './DoorStyles';
 
-const doorCount = 1;
-const mainDoorMargin = 465;
-const height = 331;
-const width = 200;
+const MainDoor = ({ config }) => {
+	const
+		{ dimensions: { mainDoor:
+		{ top, left, width, height, border, borderRadius }}} = config;
 
-const mainDoors = range(0, doorCount).map((door) => ({
+	return (
+		<div
+			className="mainDoor"
 
-	height: height,
-	width: width,
-	x: 201,
-	y: door + mainDoorMargin,
-}));
-
-const MainDoor = () =>
-	mainDoors.map((mainDoor, key) =>
-		<DoorStyles key={ key } { ...{ ...mainDoor, style: 'mainDoor' } }/>);
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				border: `${ border }px solid black`,
+				borderRadius: `${ borderRadius }px`,
+			} }
+		/>);
+};
 
 export default MainDoor;

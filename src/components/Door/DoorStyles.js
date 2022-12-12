@@ -1,8 +1,6 @@
 import { React } from 'react';
 
-const DoorStyles = ({ config }) => {
-	const { dimensions:
-{ mainDoor: { width, height, x, y, style }}} = config;
+const DoorStyles = ({ width, height, x, y, style, borderRadius, border }) =>
 
 	<div
 		style={ {
@@ -11,10 +9,10 @@ const DoorStyles = ({ config }) => {
 			top: `${ x }px`,
 			left: `${ y }px`,
 			position: 'absolute',
-			borderRadius: '30px',
+			borderRadius: `${ borderRadius }px`,
+			border: `${ border }px solid burlyWood`,
 		} }
 		className={ style }
 	/>;
-};
 
 export default DoorStyles ;

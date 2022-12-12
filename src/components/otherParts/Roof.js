@@ -1,26 +1,26 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import RoofStyle from './RoofStyle';
 
-const roofCount = 1;
-const roofMargin = 260;
-const height = 15;
-const width = 1050;
+const Roof = ({ config }) => {
+	const
+		{ dimensions:
+		{ roof: { top, left, width, height, borderRadius }}} = config ;
 
-const busRoofs = range(0, roofCount).map((roof) => ({
+	return (
+		<div
+			className="roof"
 
-	height: height,
-	width: width,
-	x: 135,
-	y: roof + roofMargin,
-}));
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				borderTopLeftRadius: `${ borderRadius.topLeft }%`,
+				borderTopRightRadius: `${ borderRadius.topRight }%`,
+				borderBottomLeftRadius: `${ borderRadius.bottomLeft }%`,
+				borderBottomRightRadius: `${ borderRadius.bottomRight }%`,
 
-const Roof = () =>
-	busRoofs.map((busRoof, key) =>
-		<RoofStyle
-			key={ key }
-			{ ...{ ...busRoof, style: 'roofTop' }
-			}
+			} }
 		/>);
+};
 
 export default Roof;

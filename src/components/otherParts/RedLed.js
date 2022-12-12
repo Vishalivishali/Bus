@@ -1,22 +1,21 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import LedStyles from './LedStyles';
 
-const redCount = 1;
-const redMargin = 1348;
-const height = 35;
-const width = 10;
+const RedLed = ({ config }) => {
+	const
+		{ dimensions: { redLed: { top, left, width, height, border }}} = config;
 
-const busLedies = range(0, redCount).map((led) => ({
+	return (
+		<div
+			className="ledRed"
 
-	height: height,
-	width: width,
-	x: 425.5,
-	y: led + redMargin,
-}));
-
-const RedLed = () =>
-	busLedies.map((busLed, key) =>
-		<LedStyles key={ key } { ...{ ...busLed, style: 'ledRed' } }/>);
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				border: `${ border }px solid black`,
+			} }
+		/>);
+};
 
 export default RedLed;

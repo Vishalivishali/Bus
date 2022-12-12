@@ -1,22 +1,22 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import LedStyles from './LedStyles';
 
-const orangeCount = 1;
-const orangeMargin = 1348;
-const height = 35;
-const width = 10;
+const OrangeLed = ({ config }) => {
+	const
+		{ dimensions:
+		{ orangeLed: { top, left, width, height, border }}} = config;
 
-const busLedies = range(0, orangeCount).map((led) => ({
+	return (
+		<div
+			className="ledOrange"
 
-	height: height,
-	width: width,
-	x: 460,
-	y: led + orangeMargin,
-}));
-
-const OrangeLed = () =>
-	busLedies.map((busLed, key) =>
-		<LedStyles key={ key } { ...{ ...busLed, style: 'ledOrange' } }/>);
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				border: `${ border }px solid black`,
+			} }
+		/>);
+};
 
 export default OrangeLed;

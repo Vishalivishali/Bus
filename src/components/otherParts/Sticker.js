@@ -1,22 +1,22 @@
-import { range } from '@laufire/utils/collection';
 import { React } from 'react';
-import StickerStyle from './StickerStyle';
 
-const stickerCount = 1;
-const stickerMargin = 172;
-const height = 51;
-const width = 1168;
+const Sticker = ({ config }) => {
+	const
+		{ dimensions:
+			{ sticker: { top, left, width, height, border }}} = config;
 
-const busDesigns = range(0, stickerCount).map((busSticker) => ({
+	return (
+		<div
+			className="sticker"
 
-	height: height,
-	width: width,
-	x: 385,
-	y: busSticker + stickerMargin,
-}));
-
-const Sticker = () =>
-	busDesigns.map((busDesign, key) =>
-		<StickerStyle key={ key } { ...{ ...busDesign, style: 'sticker' } }/>);
+			style={ {
+				top: `${ top }px`,
+				left: `${ left }px`,
+				width: `${ width }px`,
+				height: `${ height }px`,
+				border: `${ border }px solid black`,
+			} }
+		/>);
+};
 
 export default Sticker;
