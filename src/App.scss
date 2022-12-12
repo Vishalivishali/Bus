@@ -27,6 +27,21 @@
 	border-radius: 50%;
 };
 
+@keyframes rotate {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(360deg)}
+}
+
+@keyframes moveBusLeft {
+	from {transform: translate(0px,0px) scaleX(-1)}
+	to {transform: translate(1000px,0px) scaleX(-1)}
+}
+
+@keyframes moveBusRight {
+	from {transform: translate(700px,0px)}
+	to {transform: translate(0px,0px)}
+}
+
 .mainDoor {
 	position: absolute;
 	background-color: black;
@@ -76,7 +91,6 @@
 .backgroundColor {
 	position: absolute;
 	background-color: rgb(183, 205, 214);
-	top: 1px;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 };

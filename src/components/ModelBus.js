@@ -4,10 +4,10 @@ import Windows from './Window/Windows';
 import Doors from './Door/Doors';
 import Tyres from './Tyre/Tyres';
 
-const busStyle = ({ config }) => {
-	const { dimensions: { busBody:
+const busStyle = ({ data }) => {
+	const { busBody:
 			{ busColor, top, left, height, width,
-				borderRadius, border }}} = config;
+				borderRadius, border }} = data;
 
 	return {
 

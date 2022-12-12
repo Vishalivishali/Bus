@@ -1,9 +1,8 @@
 import { React } from 'react';
 
-const Sticker = ({ config }) => {
+const Sticker = ({ data }) => {
 	const
-		{ dimensions:
-			{ sticker: { top, left, width, height, border }}} = config;
+		{ sticker: { top, left, width, height, border }} = data;
 
 	return (
 		<div

@@ -1,8 +1,8 @@
 import { React } from 'react';
 import TyreStyle from './TyreStyle';
 
-const InnerTyres = ({ config }) =>
-	config.dimensions.innerTyres.map((innerTyre, key) =>
+const InnerTyres = ({ data }) =>
+	data.innerTyres.map((innerTyre, key) =>
 		<TyreStyle
 			key={ key }
 			{ ...{ ...innerTyre,

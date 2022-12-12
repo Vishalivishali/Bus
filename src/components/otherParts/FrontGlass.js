@@ -1,9 +1,9 @@
 import { React } from 'react';
 
-const FrontGlass = ({ config }) => {
+const FrontGlass = ({ data }) => {
 	const
-		{ dimensions: { frontGlass:
-			{ top, left, width, height, border, borderRadius }}} = config;
+		{ frontGlass:
+			{ top, left, width, height, border, borderRadius }} = data;
 
 	return (
 		<div

@@ -1,8 +1,8 @@
 import { React } from 'react';
 
-const RedLed = ({ config }) => {
+const RedLed = ({ data }) => {
 	const
-		{ dimensions: { redLed: { top, left, width, height, border }}} = config;
+		{ redLed: { top, left, width, height, border }} = data;
 
 	return (
 		<div

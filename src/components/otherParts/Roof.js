@@ -1,9 +1,8 @@
 import { React } from 'react';
 
-const Roof = ({ config }) => {
+const Roof = ({ data }) => {
 	const
-		{ dimensions:
-		{ roof: { top, left, width, height, borderRadius }}} = config ;
+		{ roof: { top, left, width, height, borderRadius, border }} = data;
 
 	return (
 		<div
@@ -18,7 +17,7 @@ const Roof = ({ config }) => {
 				borderTopRightRadius: `${ borderRadius.topRight }%`,
 				borderBottomLeftRadius: `${ borderRadius.bottomLeft }%`,
 				borderBottomRightRadius: `${ borderRadius.bottomRight }%`,
-
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };
