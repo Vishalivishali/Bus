@@ -7,7 +7,7 @@ import Tyres from './Tyre/Tyres';
 const busStyle = ({ data }) => {
 	const { busBody:
 			{ busColor, top, left, height, width,
-				borderRadius, border }} = data;
+				borderRadius, border, animation }} = data;
 
 	return {
 
@@ -21,7 +21,7 @@ const busStyle = ({ data }) => {
 		borderBottomLeftRadius: `${ borderRadius.bottomLeft }%`,
 		borderBottomRightRadius: `${ borderRadius.bottomRight }%`,
 		border: `${ border }px solid black`,
-
+		animation: `${ animation } 15s infinite linear`,
 	};
 };
 

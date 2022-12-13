@@ -3,7 +3,6 @@ const config = {
 		size: 0.6,
 		x: 200,
 		y: 1,
-		direction: 1,
 		animation: 'moveBusLeft',
 	},
 	{

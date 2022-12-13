@@ -6,7 +6,7 @@ import getBusDimensions from './service/getDimensions';
 const App = (context) => {
 	const { config } = context;
 
-	return <div className="getBusDimensions">
+	return <div className="App">
 		{config.buses.map((bus, key) =>
 			<ModelBus
 				key={ key }
