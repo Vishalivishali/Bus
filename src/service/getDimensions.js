@@ -4,6 +4,13 @@ import { range } from '@laufire/utils/collection';
 import { rndValue } from '@laufire/utils/random';
 
 const colors = ['#a70705', '#d777d7', '#afd3db'];
+
+const image = ['/image/lady.jpg',
+	'/image/lady4.jpg',
+	'/image/lady5.jpg',
+	'/image/lady6.jpg',
+	'/image/lady7.jpg'];
+
 const doorCount = 2;
 const doorMultiplier = 80.9;
 const doorMargin = 303;
@@ -106,6 +113,7 @@ const getWindows = ({ size }) => range(0, windowCount).map((window) => ({
 	x: 49 * size,
 	y: ((window * windowMultiplier) + windowMargin) * size,
 	border: 5 * size,
+	backgroundImages: image[window],
 }));
 
 const getInnerTyres = ({ size }) => range(0, innerTyreCount).map((tyre) => ({

@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const Windows = ({ x, y, size, borderRadius, border }) =>
+const Windows = ({ x, y, size, borderRadius, border, backgroundImages }) =>
 	<div
 		className="window"
 		style={ {
@@ -11,6 +11,7 @@ const Windows = ({ x, y, size, borderRadius, border }) =>
 			position: 'absolute',
 			borderRadius: `${ borderRadius }px`,
 			border: `${ border }px solid burlywood`,
+			backgroundImage: `url(${ process.env.PUBLIC_URL + backgroundImages })`,
 		} }
 	/>;
 
